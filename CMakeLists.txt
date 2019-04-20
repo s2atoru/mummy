@@ -137,6 +137,9 @@ SET(Mummy_CableSwig_PARENT_DIR "${Mummy_EXTERNAL_SOURCE_TREES_DIR}")
 SET(Mummy_CableSwig_SOURCE_DIR "${Mummy_CableSwig_PARENT_DIR}/CableSwig")
 SET(Mummy_CableSwig_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/CableSwigBuild")
 
+Message(STATUS "current source dir : '${CMAKE_CURRENT_SOURCE_DIR}'...")
+GET_FILENAME_COMPONENT(Mummy_SNKEYFILE "${CMAKE_CURRENT_SOURCE_DIR}/Runtime/ss.mummy.Runtime.snk" ABSOLUTE)
+
 # Echo selected CMake/configuration settings:
 #
 FOREACH(v
